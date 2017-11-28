@@ -1,0 +1,4 @@
+NCSL is a tool that counts the number of lines of code in a C or C++ program
+including the number of  raw lines of code, number of lines of comments and
+number of blank lines.  It can also optionally count the number of statement
+separations (semicolons and commas).

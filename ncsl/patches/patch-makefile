@@ -1,0 +1,32 @@
+$OpenBSD$
+
+Index: makefile
+--- makefile.orig
++++ makefile
+@@ -3,22 +3,15 @@
+ # copyright and distribution
+ # bug reports can be send to: bugs@spinroot.com
+ 
+-BIN=/usr/bin
+-MAN=/usr/man/man1
++BIN=/usr/local/bin
++MAN=/usr/local/man/man1
+ 
+ ncsl:	ncsl.c
+-	gcc -ansi -Wall -pedantic -o ncsl ncsl.c
++	$(CC) -ansi -Wall -pedantic -o ncsl ncsl.c
+ 
+-man:	ncsl.1
+-	groff -Tascii -man ncsl.1
+-
+ install:
+ 	cp ncsl $(BIN)/ncsl
+ 	cp ncsl.1 $(MAN)/ncsl.1
+ 
+-tar:
+-	tar -cvf - ncsl.1 ncsl.c makefile > ncsl.tar
+-	gzip ncsl.tar
+-
+ clean:
+-	-rm -f ncsl ncsl.exe
++	rm -f ncsl
