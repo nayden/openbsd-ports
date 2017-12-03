@@ -1,0 +1,37 @@
+$OpenBSD: patch-config_def_h,v 1.8 2016/10/09 18:47:49 czarkoff Exp $
+Index: config.def.h
+--- config.def.h.orig
++++ config.def.h
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
++static char font[] = "DejaVu Sans Mono:pixelsize=12:antialias=true:autohint=false";
+ static int borderpx = 2;
+ 
+ /*
+@@ -92,7 +92,7 @@ static const char *colorname[] = {
+ 	"blue2",
+ 	"magenta3",
+ 	"cyan3",
+-	"gray90",
++	"gray97",
+ 
+ 	/* 8 bright colors */
+ 	"gray50",
+@@ -116,10 +116,10 @@ static const char *colorname[] = {
+  * Default colors (colorname index)
+  * foreground, background, cursor, reverse cursor
+  */
+-static unsigned int defaultfg = 7;
+-static unsigned int defaultbg = 0;
+-static unsigned int defaultcs = 256;
+-static unsigned int defaultrcs = 257;
++static unsigned int defaultfg = 0;
++static unsigned int defaultbg = 7;
++static unsigned int defaultcs = 4;
++static unsigned int defaultrcs = 5;
+ 
+ /*
+  * Default shape of cursor
