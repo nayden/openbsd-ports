@@ -47,7 +47,7 @@ Index: config.def.h
  static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
  static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 -static const char *termcmd[]  = { "st", NULL };
-+static const char *termcmd[]  = { "xterm", "-bg", "gray95", "+sb", "-cr", "blue", NULL };
++static const char *termcmd[]  = { "uxterm", "-bg", "gray2", "-fg", "gray92", "+sb", "-cr", "blue", "-ls", NULL };
  
  static Key keys[] = {
  	/* modifier                     key        function        argument */
