@@ -1,13 +1,6 @@
 $OpenBSD: patch-dwm_1,v 1.2 2016/10/24 22:46:54 czarkoff Exp $
-Index: dwm.1
---- dwm.1.orig
-+++ dwm.1
-@@ -1,4 +1,4 @@
--.TH DWM 1 dwm\-VERSION
-+.TH DWM 1 dwm\-6.1
- .SH NAME
- dwm \- dynamic window manager
- .SH SYNOPSIS
+--- dwm.1.orig	Wed Nov 11 09:50:32 2015
++++ dwm.1	Wed Nov 11 09:51:25 2015
 @@ -57,7 +57,7 @@ click on a tag label adds/removes that tag to/from the
  .TP
  .B Mod1\-Shift\-Return
